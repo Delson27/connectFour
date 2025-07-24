@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+h1 {
+    color: #ffcc00;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#winner {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#board {
+    height: 540px;
+    width: 630px;
+    background: linear-gradient(to bottom, #005bbb, #003f7f);
+    border: 10px solid navy;
+    border-radius: 15px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.tile {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+    background: radial-gradient(circle, #ffffff 30%, #dddddd);
+    border-radius: 50%;
+    border: 5px solid navy;
+    transition: transform 0.2s ease-in-out;
+}
+
+.tile:hover {
+    transform: scale(1.1);
+}
+
+.red-piece {
+    background: radial-gradient(circle, #ff4d4d, #cc0000);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.yellow-piece {
+    background: radial-gradient(circle, #ffff66, #ffcc00);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+#play-again {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 12px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(to right, #28a745, #218838);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+#play-again:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, #34d058, #28a745);
+}
